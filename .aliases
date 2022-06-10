@@ -1,0 +1,22 @@
+# ------
+# General
+# ------
+
+# Search in history
+alias gh='history | grep $1'
+
+# ------
+# Docker
+# ------
+
+alias dc='docker-compose'
+alias dce='dc exec'
+alias docker-container-ip='docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $1'
+alias docker-stop-all='docker stop $(docker ps -q)'
+alias docker-kill-all='docker kill $(docker ps -q)'
+
+# ------
+# Symfony
+# ------
+
+alias sf='symfony'
