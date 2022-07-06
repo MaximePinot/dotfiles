@@ -9,8 +9,8 @@ alias gh='history | grep $1'
 # Git
 # ------
 
-# Remove all local branches except "master" and "main"
-alias git-clean='git branch | grep -v "master" | grep -v "main" | xargs git branch -D'
+# Remove all local branches except "master", "main" and "develop"
+alias git-clean='git branch | grep -v "master" | grep -v "main" | grep -v "develop" | xargs git branch -D'
 
 # ------
 # Docker
