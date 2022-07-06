@@ -23,6 +23,12 @@ alias docker-stop-all='docker stop $(docker ps -q)'
 alias docker-kill-all='docker kill $(docker ps -q)'
 
 # ------
+# PHP
+# ------
+
+alias switch-php='sudo update-alternatives --config php'
+
+# ------
 # Symfony
 # ------
 
