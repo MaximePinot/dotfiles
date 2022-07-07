@@ -14,6 +14,13 @@ return (new PhpCsFixer\Config())
         'array_syntax' => [
             'syntax' => 'short',
         ],
+        'class_attributes_separation' => [
+            'const' => 'only_if_meta',
+            'method' => 'one',
+            'property' => 'one',
+            'trait_import' => 'none',
+            'case' => 'none',
+        ],
         'combine_consecutive_issets' => true,
         'combine_consecutive_unsets' => true,
         'concat_space' => [
