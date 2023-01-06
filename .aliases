@@ -16,7 +16,8 @@ alias git-clean='git branch | grep -v "master" | grep -v "main" | grep -v "devel
 # Docker
 # ------
 
-alias dc='docker-compose'
+alias docker-compose='docker compose'
+alias dc='docker compose'
 alias dce='dc exec'
 alias docker-container-ip='docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $1'
 alias docker-stop-all='docker stop $(docker ps -q)'
