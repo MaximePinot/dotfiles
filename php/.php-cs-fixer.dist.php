@@ -50,6 +50,7 @@ return (new PhpCsFixer\Config())
         'simplified_if_return' => true,
         'simplified_null_return' => true,
         'strict_comparison' => true,
+        'strict_param' => true,
     ])
     ->setRiskyAllowed(true)
     ->setFinder($finder);
