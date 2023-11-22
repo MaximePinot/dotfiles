@@ -4,6 +4,7 @@
 
 alias update='sudo apt update && sudo apt upgrade && sf-update && sudo gem update fusuma'
 alias greph='history | grep $1'
+alias list-gpg-keys='gpg --list-secret-keys --keyid-format=long'
 
 # ------
 # Git
