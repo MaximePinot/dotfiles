@@ -2,14 +2,15 @@
 # General
 # ------
 
-# Update
 alias update='sudo apt update && sudo apt upgrade && sf-update && sudo gem update fusuma'
+alias greph='history | grep $1'
 
 # ------
 # Git
 # ------
 
 # Remove all local branches except "master", "main" and "develop"
+# /!\ Useful but risky as it can remove branches not yet pushed to remote
 alias git-clean='git branch | grep -v "master" | grep -v "main" | grep -v "develop" | xargs git branch -D'
 
 # ------
