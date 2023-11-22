@@ -2,8 +2,8 @@
 # General
 # ------
 
-# Search in history
-alias gh='history | grep $1'
+# Update
+alias update='sudo apt update && sudo apt upgrade && sf-update && sudo gem update fusuma'
 
 # ------
 # Git
