@@ -2,7 +2,7 @@
 # General
 # ------
 
-alias update='sudo apt update && sudo apt upgrade && sf-update && sudo gem update fusuma'
+alias update='sudo apt update && sudo apt upgrade && sudo gem update fusuma'
 alias greph='history | grep $1'
 alias list-gpg-keys='gpg --list-secret-keys --keyid-format=long'
 
@@ -37,5 +37,3 @@ alias switch-php='sudo update-alternatives --config php'
 
 alias sf='symfony'
 alias sfc='symfony console'
-alias sf-install='wget https://get.symfony.com/cli/installer -O - | bash'
-alias sf-update='sf-install'
