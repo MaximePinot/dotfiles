@@ -152,3 +152,6 @@ user_pref("browser.download.always_ask_before_handling_new_types", true);
 // Referer - Control the amount of cross-origin information to send
 // 0=send full URI (default), 1=scheme+host+port+path, 2=scheme+host+port
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
+
+// https://make-firefox-private-again.com/
+user_pref("dom.private-attribution.submission.enabled", false);
