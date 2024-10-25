@@ -11,12 +11,6 @@ user_pref("browser.aboutConfig.showWarning", false);
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 
-// Use Mozilla geolocation service instead of Google if permission is granted
-user_pref("geo.provider.network.url", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
-
-// Enable logging to the console
-// user_pref("geo.provider.network.logging.enabled", true);
-
 // Disable using the OS's geolocation service
 user_pref("geo.provider.ms-windows-location", false); // Windozs
 user_pref("geo.provider.use_corelocation", false); // Mac
@@ -106,6 +100,11 @@ user_pref("browser.send_pings", false);
 
 // Disable location bar making speculative connections
 user_pref("browser.urlbar.speculativeConnect.enabled", false);
+
+// Disable location bar contextual suggestions
+user_pref("browser.urlbar.quicksuggest.enabled", false);
+user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false);
+user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
 
 // Disable search and form history
 user_pref("browser.formfill.enable", false);
