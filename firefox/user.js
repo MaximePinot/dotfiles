@@ -154,3 +154,11 @@ user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
 
 // https://make-firefox-private-again.com/
 user_pref("dom.private-attribution.submission.enabled", false);
+
+// Disable urlbar suggestions
+user_pref("browser.urlbar.addons.featureGate", false);
+user_pref("browser.urlbar.fakespot.featureGate", false);
+user_pref("browser.urlbar.mdn.featureGate", false);
+user_pref("browser.urlbar.pocket.featureGate", false);
+user_pref("browser.urlbar.weather.featureGate", false);
+user_pref("browser.urlbar.yelp.featureGate", false);
