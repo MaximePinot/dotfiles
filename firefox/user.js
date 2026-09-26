@@ -1,7 +1,8 @@
 /**
  * Go to about:profiles to know where to place this file.
- * 
+ *
  * Thanks to https://github.com/arkenfox/user.js
+ * Last sync: arkenfox user.js v144
  */
 
 //  Disable about:config warning
@@ -84,10 +85,6 @@ user_pref("network.prefetch-next", false);
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
 
-// Disable predictor / prefetching
-user_pref("network.predictor.enabled", false);
-user_pref("network.predictor.enable-prefetch", false);
-
 // Disable link-mouseover opening connection to linked server
 user_pref("network.http.speculative-parallel-limit", 0);
 
@@ -157,8 +154,14 @@ user_pref("dom.private-attribution.submission.enabled", false);
 
 // Disable urlbar suggestions
 user_pref("browser.urlbar.addons.featureGate", false);
-user_pref("browser.urlbar.fakespot.featureGate", false);
 user_pref("browser.urlbar.mdn.featureGate", false);
 user_pref("browser.urlbar.pocket.featureGate", false);
 user_pref("browser.urlbar.weather.featureGate", false);
 user_pref("browser.urlbar.yelp.featureGate", false);
+user_pref("browser.urlbar.yelpRealtime.featureGate", false);
+user_pref("browser.urlbar.importantDates.featureGate", false);
+user_pref("browser.urlbar.market.featureGate", false);
+
+// Enforce no direct attestation in passkeys
+// https://bugzilla.mozilla.org/show_bug.cgi?id=1981587
+user_pref("security.webauthn.always_allow_direct_attestation", false);
