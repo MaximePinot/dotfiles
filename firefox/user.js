@@ -165,3 +165,6 @@ user_pref("browser.urlbar.market.featureGate", false);
 // Enforce no direct attestation in passkeys
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1981587
 user_pref("security.webauthn.always_allow_direct_attestation", false);
+
+// Disable the Firefox Push Service (push.services.mozilla.com)
+user_pref("dom.push.enabled", false);
